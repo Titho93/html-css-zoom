@@ -6,10 +6,11 @@
 
 body {
   width: 100vw;
-  height: 100vh;
+  background-color: black;
 }
 
 .black-space {
+  width: 100vh;
   height: 80px;
   background-color: black;
 }
@@ -17,13 +18,14 @@ body {
 .window {
   width: 100%;
   height: calc(100vh - 160px);
-  min-width: 1300px;
+  min-width: 500px;
+  min-height: 600px;
   background-color: black;
-  overflow-y: auto;
+  overflow: auto;
 }
 
 .menu {
-  width: 100%;
+  width: 100vw;
   height: 80px;
   background-color: #222222;
 }
@@ -31,18 +33,17 @@ body {
 .container {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
   margin: 0 auto;
   width: 90%;
   height: 100%;
-  background-color: blueviolet;
+  padding-bottom: 15px;
 }
 
 .card {
-  justify-content: space-between;
   position: relative;
-  width: calc(100% / 7 - 4px);
-  height: 105px;
+  width: 240px;
+  height: 140px;
   background-color: azure;
-  margin: 0 2px 10px 2px;
-  
+  margin: 0 2px 15px 2px;
 }
