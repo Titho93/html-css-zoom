@@ -19,15 +19,8 @@ body {
   width: 100%;
   height: calc(100vh - 160px);
   min-width: 500px;
-  min-height: 600px;
   background-color: black;
   overflow: auto;
-}
-
-.menu {
-  width: 100vw;
-  height: 80px;
-  background-color: #222222;
 }
 
 .container {
@@ -42,8 +35,94 @@ body {
 
 .card {
   position: relative;
-  width: 240px;
-  height: 140px;
+  width: 180px;
+  height: 110px;
   background-color: azure;
   margin: 0 2px 15px 2px;
+}
+
+.menu {
+  position: relative;
+  width: 100vw;
+  height: 80px;
+  background-color: #222222;
+  display: flex;
+}
+
+ul {
+  display: flex;
+  list-style-type: none;
+}
+
+a {
+  color: white;
+  font-size: 30px;
+  padding-left: 5px;
+}
+
+.name {
+  padding-top: 6px;
+  display: block;
+  color: white;
+}
+
+.webcam {
+  position: relative;
+  flex-grow: 1;
+}
+
+.microfone {
+  position: absolute;
+  top: 10px;
+  left: 20px;
+}
+
+.arrow {
+  color: white;
+  margin-left: 20px;
+}
+
+.utility {
+  display: flex;
+  justify-content: space-around;
+  margin: 10px;
+  flex-grow: 1;
+}
+
+.end-meeting {
+  flex-grow: 1;
+}
+
+.cam {
+  position: absolute;
+  top: 10px;
+  left: 100px;
+}
+
+.cam a {
+  padding-left: 20px;
+}
+
+.icon {
+  text-align: center;
+  padding: 5px;
+}
+
+.icon .arrow {
+  line-height: 50px;
+  margin-right: 10px;
+}
+
+.share-screen i {
+  color: #4BC701;
+}
+
+.button {
+  display: inline-block;
+  position: absolute;
+  right: 0;
+  line-height: 80px;
+  padding: 0 20px;
+  background-color: #4A4A4A;
+  color: red;
 }
